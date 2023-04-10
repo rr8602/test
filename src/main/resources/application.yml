@@ -1,0 +1,20 @@
+server:
+  encoding:
+    charset: UTF-8
+    enabled: true
+    force: true
+
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3307/springboot
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: root
+    password: 8602
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: true
